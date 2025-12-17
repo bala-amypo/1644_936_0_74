@@ -8,4 +8,7 @@ import com.example.demo.service.Studentservice;
 @Restcontroller
 public class Studentcontroller{
    @Autowired Studentservice service;
+
+   @postMapping("/post")
+   public Studententity sendData(@RequestBody Studentservice )
 }
