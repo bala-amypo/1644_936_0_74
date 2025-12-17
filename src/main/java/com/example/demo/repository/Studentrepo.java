@@ -1,6 +1,6 @@
 package com.example.demo.repository;
 
-
-public interface Studentrepo{
+@Repository
+public interface Studentrepo extends JpaRepository<Studententity,Integer>{
       
 }
