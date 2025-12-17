@@ -10,5 +10,7 @@ public class Studentcontroller{
    @Autowired Studentservice service;
 
    @postMapping("/post")
-   public Studententity sendData(@RequestBody Studentservice )
+   public Studententity sendData(@RequestBody Studententity stu){
+    return ser.postData(stu);
+   }
 }
