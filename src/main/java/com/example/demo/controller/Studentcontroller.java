@@ -12,7 +12,7 @@ import com.example.demo.service.Studentservice;
 
 @RestController
 public class Studentcontroller{
-   @Autowired Studentservice service;
+   @Autowired Studentservice ser;
 
    @PostMapping("/post")
    public Studententity sendData(@RequestBody Studententity stu){
