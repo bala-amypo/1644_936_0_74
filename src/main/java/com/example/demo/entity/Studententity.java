@@ -10,11 +10,27 @@ public class Studententity{
      private Date createAt;
 
 
-     public integer getid(){
+     public Integer getId(Integer id){
         return id;
      }
 
-     public void integer setid(){
+     public void  setId(){
         this.id=id;
      }
+
+     public String getName(String Name){
+        return name;
+     }
+     public void setName(){
+        this.name=name;
+     }
+     public String getEmail(String email){
+        return email;
+     }
+     public void setEmail(){
+        this.email=email;
+     }
+     p
+
+     
 }
