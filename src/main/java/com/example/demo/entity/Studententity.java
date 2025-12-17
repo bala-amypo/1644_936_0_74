@@ -18,10 +18,10 @@ public class Studententity{
         this.id=id;
      }
 
-     public String getName(String Name){
+     public String getUsername(String Name){
         return name;
      }
-     public void setName(){
+     public void setUsername(){
         this.name=name;
      }
      public String getEmail(String email){
@@ -30,7 +30,18 @@ public class Studententity{
      public void setEmail(){
         this.email=email;
      }
-     p
+     public String getPassword(String password){
+        return password;
+     }
+     public void setPassword(){
+        this.password=password;
+     }
+     public Date getCreatAt(Date CreateAt){
+        return createAt;
+     }
+     public void setCreateAt(){
+        this.createAt=createAt;
+     }
 
      
 }
