@@ -11,7 +11,7 @@ public class Studentserviceimpl implements Studentservice{
      //findById()
      //deleteById();
      //existById();
-    public Studententity postData(Studententity student){
-        return student.sav
+    public Studententity postData(Studententity stu){
+        return student.save(stu);
     }
 }
