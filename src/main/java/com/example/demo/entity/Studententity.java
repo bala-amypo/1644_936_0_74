@@ -1,8 +1,13 @@
 package com.example.demo.entity;
 
 
+import jakarta.persistance.Entity;
+import jakarta.persistance.Id;
+
 @Entity
 public class Studententity{
+    @Id
+    @generatedValue
      private Integer id;
      private String username;
      private String email;
@@ -17,7 +22,7 @@ public class Studententity{
         this.createAt=createAt;
      }
      public Studententity(){
-        
+
      }
 
 
