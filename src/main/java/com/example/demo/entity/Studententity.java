@@ -18,7 +18,7 @@ public class Studententity{
      private String password;
      private Date createAt;
 
-     public  Studententity(Integer id,String username,String email,String password,String createAt){
+     public  Studententity(Integer id,String username,String email,String password,Date createAt){
         this.id=id;
         this.username=username;
         this.email=email;
