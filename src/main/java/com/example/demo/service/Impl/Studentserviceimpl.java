@@ -8,5 +8,10 @@ public class Studentserviceimpl implements Studentservice{
      @Autowired Studentrepo student;
      //save
      //findAll()
-    public Studententity postData(Studententity student);
+     //findById()
+     //deleteById();
+     //existById();
+    public Studententity postData(Studententity student){
+        return student.sav
+    }
 }
