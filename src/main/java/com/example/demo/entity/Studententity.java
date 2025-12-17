@@ -9,37 +9,39 @@ public class Studententity{
      private String password;
      private Date createAt;
 
+     public 
 
-     public Integer getId(Integer id){
+
+     public Integer getId(){
         return id;
      }
 
-     public void  setId(){
+     public void  setId(Integer id){
         this.id=id;
      }
 
-     public String getUsername(String Name){
-        return name;
+     public String getUsername(){
+        return usernamename;
      }
-     public void setUsername(){
-        this.name=name;
+     public void setUsername(String username){
+        this.username=username;
      }
-     public String getEmail(String email){
+     public String getEmail(){
         return email;
      }
-     public void setEmail(){
+     public void setEmail(String email){
         this.email=email;
      }
-     public String getPassword(String password){
+     public String getPassword(){
         return password;
      }
-     public void setPassword(){
+     public void setPassword(String password){
         this.password=password;
      }
-     public Date getCreatAt(Date CreateAt){
+     public Date getCreatAt(){
         return createAt;
      }
-     public void setCreateAt(){
+     public void setCreateAt(Date createAt){
         this.createAt=createAt;
      }
 
