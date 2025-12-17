@@ -5,5 +5,8 @@ import com.example.demo.service.studentservice;
 
 @Service
 public class Studentserviceimpl implements Studentservice{
-     Studententity postData(Studententity student);
+     @Autowired Studentrepo student;
+     //save
+     //findAll()
+    public Studententity postData(Studententity student);
 }
