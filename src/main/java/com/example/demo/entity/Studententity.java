@@ -1,11 +1,12 @@
 package com.example.demo.entity;
 
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import java.sql.Date;
+
 
 @Entity
 public class Studententity{
@@ -38,7 +39,7 @@ public class Studententity{
      }
 
      public String getUsername(){
-        return usernamename;
+        return username;
      }
      public void setUsername(String username){
         this.username=username;
