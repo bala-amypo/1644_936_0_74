@@ -16,7 +16,7 @@ import jakarta.validation.constraints.Positive;
 @Entity
 public class Validationentity{
       @Id
-      @GeneratedValue(strategy=GenerartionType.IDENTITY)
+      
      private Long id;
      @NotNull
      @Size(min = 2,max =10,message = "must be 2 to 10  character")
@@ -63,10 +63,10 @@ public class Validationentity{
         this.age=age;
      }
       public  Validationentity(Long id,
-        @Size(min = 2,max =10,message = "must be 2 to 10  character")
-        @Email(message="Email is not valid")
-        @Size(min = 2,max=10,message="must be 2 to 10  character" )
-        @NotNull(message ="Password is mandatory")
+       @NotNull @Size(min = 2,max =10,message = "must be 2 to 10  character") String username,
+        @Email(message="Email is not valid") String email,
+        @Size(min = 2,max=10,message="must be 2 to 10  character" ) 
+        @NotNull(message ="Password is mandatory") String Password,
         @Positive(message ="Age must be a positive number")Integer age){
      
         this.id=id;
