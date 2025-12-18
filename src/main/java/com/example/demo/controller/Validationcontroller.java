@@ -20,7 +20,7 @@ public class Validationcontroller{
 
    @PostMapping("/post")
    public Validationentity sendData(@Valid @RequestBody Validationentity val){
-    return ser.postData(val);
+    return ser.postData2(val);
    }
    
 
