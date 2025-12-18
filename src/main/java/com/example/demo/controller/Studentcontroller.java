@@ -2,6 +2,7 @@ package com.example.demo.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +36,7 @@ public class Studentcontroller{
       return ser.getData(id);
 
    }
-   @PutMapping("/put{id}")
+   @PutMapping("/put/{id}")
    public Studententity putval(@PathVariable int id,@RequestBody Studententity entity){
       return ser.updateData(id,entity);
    }
