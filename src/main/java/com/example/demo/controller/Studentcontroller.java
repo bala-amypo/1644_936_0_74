@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Pathvariable;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 
 
@@ -27,7 +27,7 @@ public class Studentcontroller{
       return ser.getAllData();
    }
    @DeleteMapping("/delete/{id}")
-   public String deleteval(@Pathvariable int id){
-      return ser.deletedata();
+   public String deleteval(@PathVariable int id){
+      return ser.DeleteData(id);
    }
 }

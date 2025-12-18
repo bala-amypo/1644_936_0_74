@@ -5,7 +5,7 @@ import com.example.demo.service.Studentservice;
 import com.example.demo.repository.Studentrepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.Studententity;
-import org.springframework.beans.factory.annotation.Pathvariable;
+
 import java.util.List;
 
 @Service
