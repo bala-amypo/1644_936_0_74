@@ -59,10 +59,10 @@ public class Validationentity{
      public Integer getAge(){
         return age;
      }
-     puiblic void setAge(Integer age){
+     public void setAge(int age){
         this.age=age;
      }
-      public  Studententity(Long id,
+      public  Validationentity(Long id,
         @Size(min = 2,max =10,message = "must be 2 to 10  character")
         @Email(message="Email is not valid")
         @Size(min = 2,max=10,message="must be 2 to 10  character" )
@@ -75,7 +75,7 @@ public class Validationentity{
         this.password=password;
         this.age=age;
      }
-      public Studententity(){
+      public Validationentity(){
 
      }
 }
