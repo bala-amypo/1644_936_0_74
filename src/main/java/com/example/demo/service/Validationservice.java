@@ -6,6 +6,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface Validationservice{
     Validationentity postData2(@RequestBody Validationentity val);
 
-   
+   Vali
     
 }
