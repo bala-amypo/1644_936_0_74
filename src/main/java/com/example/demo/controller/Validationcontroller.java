@@ -19,7 +19,7 @@ public class Validationcontroller{
    @Autowired Validationservice ser;
 
    @PostMapping("/post")
-   public Validationentity sendData(@valid @RequestBody Validationentity val){
+   public Validationentity sendData(@Valid @RequestBody Validationentity val){
     return ser.postData(val);
    }
    
