@@ -75,4 +75,7 @@ public class Validationentity{
         this.password=password;
         this.age=age;
      }
+      public Studententity(){
+
+     }
 }
