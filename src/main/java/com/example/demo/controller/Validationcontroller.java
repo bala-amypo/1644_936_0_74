@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.DeleteMapping;
 
 
-import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentservice; 
+import com.example.demo.entity.Validationentity;
+import com.example.demo.service.Validationservice; 
 
 
 
 @RestController
 public class Validationcontroller{
-   @Autowired Studentservice ser;
+   @Autowired Validationservice ser;
 
    @PostMapping("/post")
-   public Studententity sendData(@RequestBody Studententity stu){
+   public Validationentity sendData(@RequestBody Validationentity stu){
     return ser.postData(stu);
    }
    @GetMapping("/get")
