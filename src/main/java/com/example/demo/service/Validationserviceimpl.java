@@ -9,11 +9,11 @@ import com.example.demo.entity.Validationentity;
 
 @Service
 public class Validationserviceimpl implements Validationservice{
-     @Autowired Validationrepo student;
+     @Autowired Validationrepo valid;
     
      @Override
-    public Validationentity postData(Validationentity stu){
-        return student.save(stu);
+    public Validationentity postData(Validationentity val){
+        return valid.save(val);
     }
   
 }
