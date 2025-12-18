@@ -8,6 +8,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Positive;
 
 
 
@@ -18,13 +19,14 @@ public class Validationentity{
       @GeneratedValue(strategy=GenerartionType.IDENTITY)
      private Long id;
      @NotNull
-     @Size(min = 2,max =n 30,message = "must be 2 to 10  character")
+     @Size(min = 2,max =0,message = "must be 2 to 10  character")
      private String username;
      @Email(message="Email is not valid")
      private String email;
-     @Max(6)
+     @Size(min = 2,max=0,message="" )
      @NotNull(message ="Password is mandatory")
      private String password;
      @Max(30)
+     @Positive(message ="Age must be a positive number")
      private Integer age;
 }
