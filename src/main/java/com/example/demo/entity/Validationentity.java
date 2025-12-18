@@ -19,11 +19,11 @@ public class Validationentity{
       @GeneratedValue(strategy=GenerartionType.IDENTITY)
      private Long id;
      @NotNull
-     @Size(min = 2,max =0,message = "must be 2 to 10  character")
+     @Size(min = 2,max =10,message = "must be 2 to 10  character")
      private String username;
      @Email(message="Email is not valid")
      private String email;
-     @Size(min = 2,max=0,message="must be 2 to 10  character" )
+     @Size(min = 2,max=10,message="must be 2 to 10  character" )
      @NotNull(message ="Password is mandatory")
      private String password;
      @Max(30)
@@ -62,11 +62,17 @@ public class Validationentity{
      puiblic void setAge(Integer age){
         this.age=age;
      }
-      public  Studententity(Long id,String username,String email,String password,Integer age){
+      public  Studententity(Long id,
+        @Size(min = 2,max =10,message = "must be 2 to 10  character")
+        @Email(message="Email is not valid")
+        @Size(min = 2,max=10,message="must be 2 to 10  character" )
+        @NotNull(message ="Password is mandatory")
+        @Positive(message ="Age must be a positive number")Integer age){
+     
         this.id=id;
         this.username=username;
         this.email=email;
         this.password=password;
-        this.createAt=createAt;
+        this.age=age;
      }
 }
