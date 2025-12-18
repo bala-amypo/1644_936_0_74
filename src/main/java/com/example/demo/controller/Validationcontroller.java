@@ -23,23 +23,7 @@ public class Validationcontroller{
    public Validationentity sendData(@RequestBody Validationentity stu){
     return ser.postData(stu);
    }
-   @GetMapping("/get")
-   public List<Studententity>getval(){
-      return ser.getAllData();
-   }
-   @DeleteMapping("/delete/{id}")
-   public String deleteval(@PathVariable int id){
-      return ser.DeleteData(id);
-   }
-   @GetMapping("/getid/{id}")
-   public Studententity getdataid(@PathVariable int id){
-      return ser.getData(id);
-
-   }
-   @PutMapping("/put/{id}")
-   public Studententity putval(@PathVariable int id,@RequestBody Studententity entity){
-      return ser.updateData(id,entity);
-   }
+   
 
 
    
