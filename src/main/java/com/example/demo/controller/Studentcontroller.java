@@ -28,6 +28,6 @@ public class Studentcontroller{
    }
    @DeleteMapping("/delete/{id}")
    public String deleteval(@Pathvariable int id){
-      return ser.deleteData();
+      return ser.deletedata();
    }
 }
