@@ -26,6 +26,8 @@ public class Studentserviceimpl implements Studentservice{
            return "Deleted Successfuly";
    }
    @Override
-   
+   public Studententity getDta(int id){
+    return student.findById(id);
+   }
 
 }
