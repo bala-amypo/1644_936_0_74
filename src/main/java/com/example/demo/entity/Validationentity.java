@@ -23,10 +23,50 @@ public class Validationentity{
      private String username;
      @Email(message="Email is not valid")
      private String email;
-     @Size(min = 2,max=0,message="" )
+     @Size(min = 2,max=0,message="must be 2 to 10  character" )
      @NotNull(message ="Password is mandatory")
      private String password;
      @Max(30)
      @Positive(message ="Age must be a positive number")
      private Integer age;
+
+      public Long getId(){
+        return id;
+     }
+
+     public void  setId(Long id){
+        this.id=id;
+     }
+
+     public String getUsername(){
+        return username;
+     }
+     public void setUsername(String username){
+        this.username=username;
+     }
+     public String getEmail(){
+        return email;
+     }
+     public void setEmail(String email){
+        this.email=email;
+     }
+     public String getPassword(){
+        return password;
+     }
+     public void setPassword(String password){
+        this.password=password;
+     }
+     public Integer getAge(){
+        return age;
+     }
+     puiblic void setAge(Integer age){
+        this.age=age;
+     }
+      public  Studententity(Long id,String username,String email,String password,Integer age){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+        this.createAt=createAt;
+     }
 }
