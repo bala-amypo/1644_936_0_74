@@ -5,5 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface Studentservice{
     Studententity postData(@RequestBody Studententity stu);
 
-    List<Studententity>
+    List<Studententity>getallData();
+    
+    
 }
