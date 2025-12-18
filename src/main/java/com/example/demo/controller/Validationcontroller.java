@@ -18,7 +18,7 @@ import com.example.demo.service.Validationservice;
 public class Validationcontroller{
    @Autowired Validationservice ser;
 
-   @PostMapping("/post")
+   @PostMapping("/post2")
    public Validationentity sendData(@Valid @RequestBody Validationentity val){
     return ser.postData2(val);
    }
