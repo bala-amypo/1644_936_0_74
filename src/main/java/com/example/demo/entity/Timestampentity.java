@@ -23,7 +23,9 @@ public class Timestampentity{
 
     @prepersist
     public void Oncreate(){
-        
+        LocalDateTime now=new LocalDateTime().now();
+        this.createAt=now;
+        this.updateAt=now;
     }
 
 
