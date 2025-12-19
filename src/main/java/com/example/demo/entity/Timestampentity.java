@@ -20,6 +20,8 @@ public class Timestampentity{
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
 
+    @prepersists
+
     
 
 }
