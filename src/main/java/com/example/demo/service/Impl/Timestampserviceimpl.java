@@ -9,7 +9,7 @@ import com.example.demo.entity.Timestampentity;
 
 @Service
 public class Timestampserviceimpl implements Timestampservice{
-     @Autowired Validationrepo valid;
+     @Autowired Timestamprepo valid;
     
      @Override
     public Timestampentity postVal1(Timestampentity stamp){
