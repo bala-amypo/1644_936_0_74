@@ -19,6 +19,7 @@ public class Timestampcontroller{
    @Autowired Timestampservice ser;
 
    @PostMapping("/post1")
-   public Timestampentity sendData(@Valid @RequestBody Timestampentity val){
+   public Timestampentity sendData(@Valid @RequestBody Timestampentity stamp){
     return ser.postVal1(val);
    }
+}

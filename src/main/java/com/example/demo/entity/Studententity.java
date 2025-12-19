@@ -60,7 +60,7 @@ public class Studententity{
         return UpdateAt;
     }
     public Date setUpdateAt(Date updateAt){
-        this.updateAt=updateAt
+        this.updateAt=updateAt;
     }
       
     public Studententity(Integer id,String name,String email,String password,Date created){
