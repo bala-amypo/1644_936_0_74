@@ -17,7 +17,7 @@ public class Validationserviceimpl implements Validationservice{
     }
     @Override
    public Validationentity getData(int id){
-    return valid.findById(id);
+    return valid.findById(id).or
    }
  
   
