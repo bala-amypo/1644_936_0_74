@@ -8,6 +8,6 @@ public class Globalexception{
 
 @ExceptionHandler(Validationmexception.class)
 public ResponseBody<String>handleValidationexception(){
-    return new ResponseBody<String>();
+    return new ResponseBody<String>(ex.getMessage(),HttpStatus.BAD_GATWAY);
 }
 }
