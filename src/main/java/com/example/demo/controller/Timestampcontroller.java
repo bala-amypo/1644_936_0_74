@@ -18,7 +18,7 @@ import com.example.demo.service.Validationservice;
 public class Timestampcontroller{
    @Autowired Timestampservice ser;
 
-   @PostMapping("/post2")
+   @PostMapping("/post1")
    public Timestampentity sendData(@Valid @RequestBody Timestampentity val){
-    return ser.postData2(val);
+    return ser.postVal1(val);
    }
