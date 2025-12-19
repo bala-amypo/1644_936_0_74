@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.Data;
 import java.time.LocalDateTime;
+import jakarta.persistence.Prepersist;
 
 
 
@@ -20,7 +21,11 @@ public class Timestampentity{
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
 
-    @prepersists
+    @prepersist
+    public void Oncreate(){
+        
+    }
+
 
     
 
