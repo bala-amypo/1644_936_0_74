@@ -19,6 +19,6 @@ public class Validationserviceimpl implements Validationservice{
    public Studententity getData(int id){
     return student.findById(id).orElse(null);
    }
-   @Column(name="email"
+
   
 }
