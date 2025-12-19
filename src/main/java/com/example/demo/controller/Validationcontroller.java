@@ -28,7 +28,7 @@ public class Validationcontroller{
    }
     @GetMapping("/findV/{id}")
    public Validationentity getDataval(@PathVariable long id){
-      return ser.getData(id);
+      return ser.getData1(id);
    
 
 }

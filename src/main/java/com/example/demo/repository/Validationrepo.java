@@ -8,4 +8,6 @@ import com.example.demo.entity.Validationentity;
 @Repository
 public interface Validationrepo extends JpaRepository<Validationentity,Long>{
       
+
+      
 }
