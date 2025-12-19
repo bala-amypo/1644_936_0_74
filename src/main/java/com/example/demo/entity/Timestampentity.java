@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Data;
 import java.time.LocalDateTime;
 import jakarta.persistence.Prepersist;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 
 
 
@@ -14,6 +16,8 @@ import jakarta.persistence.Prepersist;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Timestampentity{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String email;
@@ -26,6 +30,11 @@ public class Timestampentity{
         LocalDateTime now=new LocalDateTime().now();
         this.createAt=now;
         this.updateAt=now;
+    }
+
+    @PreUpdate
+    public void Onupdate(){
+        this.updateat=now;
     }
 
 
