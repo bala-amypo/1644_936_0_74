@@ -2,6 +2,8 @@ package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,7 +26,7 @@ public class Validationcontroller{
    }
     @GetMapping("/findid1/{id}")
    public Validationentity getdataid1(@PathVariable int id){
-      return ser.getData(id);
+      return ser.getData1(id);
    
 
 

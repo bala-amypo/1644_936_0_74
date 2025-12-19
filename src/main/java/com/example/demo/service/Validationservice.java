@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 public interface Validationservice{
     Validationentity postData2(@RequestBody Validationentity val);
-    Validationentity getData(int id);
+    Validationentity getData1(int id);
    
     
 }
