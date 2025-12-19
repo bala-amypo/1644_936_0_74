@@ -25,11 +25,11 @@ public class Validationcontroller{
     return ser.postData2(val);
    }
     @GetMapping("/findid1/{id}")
-   public Validationentity getdataid1(@PathVariable int id){
+   public Validationentity getdataid1(@PathVariable Long id){
       return ser.getData1(id);
    
 
-
+}
    
 
 }
