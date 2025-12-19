@@ -18,13 +18,13 @@ import jakarta.persistence.JoinColumn;
 public class Idcarddetailentity{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
+    private Int id;
     private String cardnumber;
     private String studentid;
 
 
     @OneToOne 
     @JoinColumn(name="student_id")
-    private studentdetails student;
+    private studentdetailsentity student;
 
 }
