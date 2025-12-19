@@ -28,7 +28,7 @@ public class Timestampentity{
     private LocalDateTime updateAt;
 
     @PrePersist
-      LocalDateTime now=new LocalDateTime.now();
+      LocalDateTime now=LocalDateTime().now();
     public void Oncreate(){
         this.createAt=now;
         this.updateAt=now;

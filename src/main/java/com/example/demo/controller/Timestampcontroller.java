@@ -18,7 +18,7 @@ import com.example.demo.service.Timestampservice;
 public class Timestampcontroller{
    @Autowired Timestampservice ser;
 
-   @PostMapping("/post1")
+   @PostMapping("/postT")
    public Timestampentity sendData(@RequestBody Timestampentity stamp){
     return ser.postVal1(stamp);
    }
