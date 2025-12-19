@@ -15,5 +15,10 @@ public class Validationserviceimpl implements Validationservice{
     public Validationentity postData2(Validationentity val){
         return valid.save(val);
     }
+    @Override
+   public Studententity getData(int id){
+    return student.findById(id).orElse(null);
+   }
+   @Column(name="email"
   
 }
