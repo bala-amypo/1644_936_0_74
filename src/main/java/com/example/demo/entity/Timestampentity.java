@@ -36,7 +36,7 @@ public class Timestampentity{
 
     @PreUpdate
     public void Onupdate(){
-        this.updateat=now;
+        this.updateAt=now;
     }
 
 
