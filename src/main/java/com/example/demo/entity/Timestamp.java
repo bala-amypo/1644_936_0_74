@@ -36,14 +36,25 @@ public class Timestamp{
     public Date getCreateAt(){
         return creatAt;
     }
-    public void setCreated(Date creatAt){
+    public void setCreated(LocalDateTime creatAt){
         this.creatAt=creatAt;
     }
     public Date getUpdateAt(){
         return UpdateAt;
     }
-    public Date setUpdateAt(Date updateAt){
+    public Date setUpdateAt(LocalDateTime updateAt){
         this.updateAt=updateAt
+    }
+    public Timestamp(long id,String name,String email,String password,LocalDateTime creatAt,LocalDateTime UpdateAt){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password;
+        this.creatAt=creatAt;
+        this.updateAt=UpdateAt
+    }
+    public Studententity(){
+
     }
 
 }
