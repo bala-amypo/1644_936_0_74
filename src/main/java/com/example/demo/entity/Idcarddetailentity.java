@@ -6,6 +6,8 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.One;
+import jakarta.persistence.GeneratedValue;
 
 
 
@@ -20,6 +22,8 @@ public class Idcarddetailentity{
     private String cardnumber;
     private String studentid;
 
+
+    @OneToOne 
     private studentdetails student;
-    
+
 }
