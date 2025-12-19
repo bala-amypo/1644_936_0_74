@@ -12,7 +12,7 @@ public class Timestampserviceimpl implements Timestampservice{
      @Autowired Validationrepo valid;
     
      @Override
-    public Timestampentity postVal1(Timestampentity val){
-        return valid.save(val);
+    public Timestampentity postVal1(Timestampentity stamp){
+        return valid.save(stamp);
     }
 }
