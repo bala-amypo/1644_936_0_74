@@ -1,7 +1,7 @@
 
-import com.example.demo.entity.Studententity;
+import com.example.demo.entity.Studentdetailsentity;
 import org.springframework.web.bind.annotation.RequestBody;
-import java.util.List;
+
 public interface Studentdetailsservice{
     Studententity postData(@RequestBody Studentdetailsentity stu);
 }
