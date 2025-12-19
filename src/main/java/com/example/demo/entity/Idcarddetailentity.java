@@ -18,7 +18,7 @@ import jakarta.persistence.JoinColumn;
 public class Idcarddetailentity{
      @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String cardnumber;
     private String studentid;
 
