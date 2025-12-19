@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import com.example.demo.entity.Studententity;
-import com.example.demo.service.Studentservice; 
+import com.example.demo.entity.Studentdetailsentity;
+import com.example.demo.service.Studentdetailsservice; 
 
 
 
@@ -16,8 +16,8 @@ import com.example.demo.service.Studentservice;
 public class Studentdetailscontroller{
    @Autowired Studentdetailsservice ser;
 
-   @PostMapping("/post")
-   public Studentdetailsentity sendData(@RequestBody Studentdetailsentity stu){
-    return ser.postData(stu);
+   @PostMapping("/postL")
+   public Studentdetailsentity sendData5(@RequestBody Studentdetailsentity stu){
+    return ser.postData5(stu);
    }
    }

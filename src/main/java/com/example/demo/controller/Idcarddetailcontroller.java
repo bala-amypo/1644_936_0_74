@@ -19,8 +19,8 @@ import com.example.demo.service.Studentservice;
 public class Studentcontroller{
    @Autowired Studentservice ser;
 
-   @PostMapping("/post")
-   public Studententity sendData(@RequestBody Studententity stu){
-    return ser.postData(stu);
+   @PostMapping("/postL")
+   public Idcarddetailentity sendData5(@RequestBody Studentdetailsentity stu){
+    return ser.postData5(stu);
    }
    }

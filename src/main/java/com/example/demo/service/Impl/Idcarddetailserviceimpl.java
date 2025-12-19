@@ -6,7 +6,7 @@ import com.example.demo.repository.Studendetailstrepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.Studentdetailsentity;
 
-import java.util.List;
+
 
 @Service
 public class Idcarddetailserviceimpl implements Studentservice{
