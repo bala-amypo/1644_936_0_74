@@ -24,9 +24,9 @@ public class Validationcontroller{
    public Validationentity sendData(@Valid @RequestBody Validationentity val){
     return ser.postData2(val);
    }
-    @GetMapping("/findid1/{id}")
-   public Validationentity getDataid1(@PathVariable long id){
-      return ser.getData1(id);
+    @GetMapping("/findV/{id}")
+   public Validationentity getDataval(@PathVariable long id){
+      return ser.getData(id);
    
 
 }
