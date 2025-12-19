@@ -23,6 +23,7 @@ public class Studententity{
      private String email;
      private String password;
      private Date createAt;
+     
       
 
     public void setId(long id){
@@ -53,9 +54,14 @@ public class Studententity{
         return creatAt;
     }
     public void setCreated(Date creatAt){
-        this.created=created;
+        this.creatAt=creatAt;
     }
-    public Date 
+    public Date getUpdateAt(){
+        return UpdateAt;
+    }
+    public Date setUpdateAt(Date updateAt){
+        this.updateAt=updateAt
+    }
       
     public Studententity(Integer id,String name,String email,String password,Date created){
         this.id=id;
