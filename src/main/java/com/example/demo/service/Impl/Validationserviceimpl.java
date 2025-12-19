@@ -16,8 +16,8 @@ public class Validationserviceimpl implements Validationservice{
         return valid.save(val);
     }
     @Override
-   public Studententity getData(int id){
-    return student.findById(id).orElse(null);
+   public Validationentity getData(int id){
+    return valid.findById(id);
    }
  
   
