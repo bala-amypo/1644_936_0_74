@@ -17,7 +17,7 @@ public class Validationserviceimpl implements Validationservice{
     }
     @Override
    public Validationentity getData1(int id){
-    return valid.findById(id).orElseThrow(()->new ValidationException(null))
+    return valid.findById(id).orElseThrow(()->new ValidationException("Invalid Id"+id));
    }
  
   

@@ -10,9 +10,6 @@ public class Validationexception extends RuntimeException{
         super(message);
 
     }
-      @Override
-   public Studententity getData(int id){
-    return student.findById(id).orElse(null);
-   }
+    
     
 }
