@@ -1,6 +1,9 @@
 package com.example.demo.exception;
-
+import org.springframework.http.
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+
 
 
 
@@ -8,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class Globalexception{
 
 @ExceptionHandler(Validationmexception.class)
-public ResponseBody<String>handleValidationexception(){
-    return new ResponseBody<String>(ex.getMessage(),HttpStatus.BAD_GATWAY);
+public Responseentity<String>handleValidationexception(){
+    return new Responseentity<String>(ex.getMessage(),HttpStatus.BAD_GATWAY);
 }
 }
