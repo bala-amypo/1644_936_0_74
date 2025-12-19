@@ -6,8 +6,8 @@ import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.One;
-import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 
 
 
@@ -24,6 +24,7 @@ public class Idcarddetailentity{
 
 
     @OneToOne 
+    @JoinColumn(name="student_id")
     private studentdetails student;
 
 }
